@@ -99,12 +99,8 @@ h2 {
 .together {
     width: 20%;
     float: right;
-    margin-right: 10%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% 10% 5% 0%;
     position:static;
-    flex-wrap: wrap;
-    box-sizing: border-box;
 }
 
 #ourstory {
@@ -119,7 +115,6 @@ h2 {
     0 0.05em #000000,
     -0.05em 0 #000000,
     0 -0.05em #000000;
-    box-sizing: border-box;
 }
 
 /* about me section end */
@@ -132,7 +127,6 @@ h2 {
     text-align: center;
     flex-wrap: wrap;
     position:relative;
-    box-sizing: border-box;
     display: flex;
 }
 
@@ -147,7 +141,6 @@ h2 {
 
 .other-work{
     width:40%;
-    box-sizing: border-box;
 }
 
 
@@ -170,15 +163,20 @@ footer {
 
 /* Footer Styling End */
 
-@media(max-width:600px){
-    .together {
-        width:100%;
-        float:none;
-    }
-    #ourstory {
-        width:80%;
-        float:none;
-    }
+/* Media Query */
 
+@media(max-width:600px){
+    .together,
+    #ourstory {
+        width:90%;
+        float:none;
+    }
 }
  
+@media(max-width:768px){
+    .together,
+    #ourstory {
+        width:90%;
+        float:none;
+    }
+}
