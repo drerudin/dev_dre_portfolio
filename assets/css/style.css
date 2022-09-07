@@ -121,28 +121,37 @@ h2 {
 
 /* My Works section */
 
-.works {
+.myworks {
     width: 100%;
-    justify-content: space-around;
-    text-align: center;
-    flex-wrap: wrap;
-    position:relative;
     display: flex;
-}
-
-#my-work {
     flex-wrap: wrap;
-
+    background-image: url(../images/ukrhills.jpg);
+    background-size: cover;
+    background-position:center;
+    color: white;
+    text-align: center;
+    position: relative;
 }
 
-#run-buddy{
-    width: 60%;
+/* wraps all the myworks articles making the first image one larger */
+
+.myworks {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: top;
+    margin: 0;
+    padding: 0;
 }
 
-.other-work{
-    width:40%;
+.myworks img {
+    width: 30%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    float: center;    
 }
-
 
 
   /* My works section End */
